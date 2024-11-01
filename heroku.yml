@@ -1,0 +1,10 @@
+build:
+  docker:
+    web: Dockerfile
+
+run:
+  web: gunicorn autorise.wsgi:application --bind 0.0.0.0:8000 --workers 3
+
+release:
+  command:
+    - python manage.py migrate

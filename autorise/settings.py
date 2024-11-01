@@ -177,5 +177,4 @@ USE_TZ = True
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-ChatGPT said:
-ChatGPT
+print("SECRET_KEY:", env('SECRET_KEY', default="Not Set"))
